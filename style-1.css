@@ -1,0 +1,181 @@
+header {
+    background: linear-gradient(90deg, #459eaf, #1b2838);
+    color: #e8f0f8;
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  .container h1{
+    font-size: 50px;
+  }
+  .container p{
+    font-size: 20px;
+    color: #004553;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    margin-right: 17px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fcfcfc;
+    text-shadow: 1px 1px 3px #000;
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .search-bar input {
+    width: 96%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2b3e50;
+    color: #e8f0f8;
+    box-shadow: 0px 4px 6px #0000004d;
+  }
+  
+  .search-bar input::placeholder {
+    color: #5ccfe6;
+  }
+  
+  .search-bar button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #5ccfe6;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #5ccfe6;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #5ccfe6;
+    color: #1b2838;
+    border-color: #5ccfe6;
+    cursor: pointer;
+  }
+  .search-bar {
+    cursor: text;
+    font-size: 1.6rem;
+    border-radius: 16px;
+    border: none;
+    padding: 2px;
+    background: -webkit-radial-gradient(circle 80px at 80% -10%, #fff, #181b1b);
+    background: -moz-radial-gradient(circle 80px at 80% -10%, #fff, #181b1b);
+    background: radial-gradient(circle 80px at 80% -10%, #fff, #181b1b);
+    position: relative;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.66);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.66);
+    overflow: hidden;
+  }
+  
+  .search-bar::after {
+    cursor: text;
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 60%;
+    border-radius: 120px;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.22);
+    -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.22);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.22);
+    z-index: -1;
+  }
+  
+  .blob {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    border-radius: 16px;
+    bottom: 0;
+    left: 0;
+    background: -webkit-radial-gradient(circle 60px at 0% 100%, #ff3fcb, rgba(255, 0, 216, 0.5), transparent);
+    background: -moz-radial-gradient(circle 60px at 0% 100%, #ff3fcb, rgba(255, 0, 216, 0.5), transparent);
+    background: radial-gradient(circle 60px at 0% 100%, #ff3fcb, rgba(255, 0, 216, 0.5), transparent);
+    -webkit-box-shadow: -10px 10px 30px rgba(255, 0, 229, 0.18);
+    -moz-box-shadow: -10px 10px 30px rgba(255, 0, 229, 0.18);
+    box-shadow: -10px 10px 30px rgba(255, 0, 229, 0.18);
+  }
+  
+  .inner {
+    padding: 14px 25px;
+    border-radius: 14px;
+    color: #fff;
+    z-index: 3;
+    position: relative;
+    background: -webkit-radial-gradient(circle 80px at 80% -50%, #777, #0f1111);
+    background: -moz-radial-gradient(circle 80px at 80% -50%, #777, #0f1111);
+    background: radial-gradient(circle 80px at 80% -50%, #777, #0f1111);
+    outline: none;
+    margin: 3px;
+    padding-left: 40px;
+    font-weight: 600;
+    caret-color: gray;
+    text-shadow: 0 0 0 gray;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    font-family: system-ui, sans-serif;
+    width: 99%;
+  }
+  
+  .inner::placeholder {
+    font-weight: 100;
+    padding-left: 2px;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    position: absolute;
+    color: gray;
+    z-index: 4;
+    top: 20.5px;
+    left: 15px;
+  }
+  
+  .search-bar:focus-within {
+    background-position: 290px;
+    -webkit-transform: skew(10deg, 0deg);
+    -moz-transform: skew(10deg, 0deg);
+    transform: skew(10deg, 0deg);
+    -webkit-box-shadow: -13px 20px 20px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: -13px 20px 20px rgba(0, 0, 0, 0.66);
+    box-shadow: -13px 20px 20px rgba(0, 0, 0, 0.66);
+  }

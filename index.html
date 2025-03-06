@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-1.css">
+    <title>عن المبادرة</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+        .search-bar {
+            position: relative;
+        }
+        .search-bar input {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            transition: 0.3s;
+            outline: none;
+        }
+        .search-bar input:focus {
+            width: 300px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .container {
+            padding: 50px 20px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo" onclick="scrollToTop()">مبادرة حياة كريمة</div>
+        <div class="nav-links">
+            <a href="#">تبرع الآن</a>
+            <a href="#">اتصل بنا</a>
+            <a href="http://127.0.0.1:5500/school%20project/html.school/school.html">الرئيسية</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>ماذا تفعل حياة كريمة؟</h1>
+        <p>
+          مهمتنا ورؤيتنا<br>
+          مؤسسة رائدة كنموذج محلي ودولي، يُحقق أثرًا طيبًا إيجابيًا طويل المدى في كل بيت مصري من خلال توطين أهداف التنمية المستدامة، ورؤية مصر 2030، ودعم المشروع القومي حياة كريمة لتنمية الريف المصري كونه المشروع الجامع الشامل لأهداف التنمية المستدامة من خلال منظومة تنموية تحقق مزيدًا من روح المشاركة المجتمعية لبناء الوطن وتعزيز فكر المواطنة من خلال كسر حلقة الفقر وخلق مستقبل أكثر اشراقا للأسر المصرية.
+          
+          
+          
+          الرسالة<br>:
+          
+          رسالتنا هي المساهمة في تنمية الإنسان بالتكافل الرحيم والتدخل السريع طويل المدى لمساندة كل مصري ومصرية من الأسر الأكثر احتياجا في محافظات وقرى مصر في كافة مناحي الحياة على أن تكون أولويتنا هي تقديم العون لكل الأسر الأولى بالرعاية برحمة ولطف ومهنية لتصبح المؤسسة كيانًا شابًا رائدًا يصل بالمجتمع إلى حالة الرضا، ثم حالة الإنتاج، ثم الاستقلالية الذاتية، ومن ثم الرقي وتحسين مستوى المعيشة وتحقيق الرخاء، بما يضمن الحياة الكريمة لكل أفراده.
+        </p>
+    </div>
+    
+    <div class="cards">
+        <div class="card">
+            <h3>تطوير المدارس</h3>
+            <p>مبادرة تهدف إلى تحسين البنية التحتية للمدارس في القرى الفقيرة.</p>
+        </div>
+        <div class="card">
+            <h3>المراكز الصحية</h3>
+            <p>إنشاء مراكز صحية مجهزة بأحدث التقنيات في المناطق النائية.</p>
+        </div>
+        <div class="card">
+            <h3>مشاريع المياه النظيفة</h3>
+            <p>توفير مياه صالحة للشرب من خلال إنشاء محطات تحلية.</p>
+        </div>
+        <div class="card">
+            <h3>دعم المشاريع الصغيرة</h3>
+            <p>تمكين الأسر من إقامة مشاريع تساعدهم في تحسين دخلهم.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 جميع الحقوق محفوظة لمبادرة حياة كريمة</p>
+    </footer>
+</body>
+
+</html> 
