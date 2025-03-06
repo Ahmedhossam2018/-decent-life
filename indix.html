@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مبادرة حياة كريمة</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="./style-project.css">
+
+</head>
+
+<body>
+  <header class="section">
+    <div class="header-container">
+      <div class="logo" onclick="scrollToTop()">مبادرة حياة كريمة</div>
+      <div class="search-bar">
+        <div class="blob"></div>
+        <input type="text" id="ser" class="inner" placeholder="ابحث عن اماكن تواجد المبادره" dir="rtl"
+          onkeyup="filterMachines()">
+      </div>
+
+      <div class="nav-links">
+        <a href="#" class="jj">تبرع الان</a>
+        <a href="#">تواصل معنا</a>
+        <a href="http://127.0.0.1:5500/school%20project/html.school/index.html">عن المبادرة</a>
+        <a href="http://127.0.0.1:5500/school%20project/html.school/school.html">الرئيسية</a>
+      </div>
+    </div>
+  </header>
+  <header class="text-center py-5 section">
+    <h1 class="display-4 fst-italic">!مبادره حياة كريمه.... لمستقبل مشرق</h1>
+    <p class="lead my-3"></p>
+  </header>
+  <br>
+  <center>
+
+    <section class="containerr my-10">
+      <div class="row g-4 fade-in" id="card-gallery">
+      </div>
+    </section>
+    <br><br><br><br>
+    <div class="content">
+      <h1>عن حياة كريمة</h1>
+      <br>
+      <p>تم تدشين مؤسسة حياة كريمة بقرار رقم 902 لسنة 2019 بعد إطلاق السيد الرئيس عبد الفتاح السيسي لمبادرة حياة كريمة
+        لتكون المظلة الرسمية لعمل الشباب المتطوع في المبادرة لمتابعة المشروع، وتوطين أهداف التنمية المستدامة والتي تهدف
+        إلى إيجاد تدخلات فاعلة نحو أحد أهم القضايا المجتمعية والمتمثلة في توفير الحد الأدنى من الحياة الكريمة لسكان
+        المجتمعات الأكثر احتياجا في المناطق الفقيرة والعشوائيات الحضرية غير المخططة والمناطق البديلة للعشوائيات غير
+        الآمنة والقرى الفقيرة على مستوي الجمهورية; سعيا للقضاء على الفقر المدقع.</p>
+      <br>
+      <a href="http://127.0.0.1:5500/school%20project/contaneo/index-1.html"><button class="ahd">لمزيد من
+          التفاصيل</button></a>
+    </div>
+
+
+
+    <div class="modal fade" id="machineModal" tabmain="-1" aria-hidden="true">
+      <div class="modal-dialog" id="div">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="machineModalTitle"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img id="machineModalImage" class="w-100 mb-3" alt="">
+            <p><strong id="st">المميزات:</strong> <span id="machineAdvantages"></span></p>
+            <p><strong id="ts">العيوب:</strong> <span id="machineDisadvantages"></span></p>
+            <p><strong id="ts">الوصف:</strong> <span id="machineDescription"></span></p>
+            <p id="machineDescription"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <footer class="header-content">
+      <h1>المستفيدون من الخدمات المباشرة</h1>
+      <div class="stats-container">
+        <div class="btr">
+          <i class="fa-solid fa-handshake"></i>
+          <h2>+36125</h2>
+          <h3>محور التمكين الإقتصادي وريادة الأعمال</h3>
+        </div>
+        <div class="btr">
+          <i class="fa-solid fa-utensils"></i>
+          <h2>+11687500</h2>
+          <h3>محور الأمن الغذائي</h3>
+        </div>
+        <div class="bte">
+          <i class="fa-solid fa-book-open"></i>
+          <h2>+1168750</h2>
+          <h3>محور التمكين الإجتماعى</h3>
+          <h3>(إدارة التعليم والثقافة والتوعية)</h3>
+        </div>
+        <div class="btr">
+          <i class="fa-solid fa-users"></i>
+          <h2>+63112</h2>
+          <h3>محور التدخلات الإنسانية</h3>
+        </div>
+        <div class="btr">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h2>+841500</h2>
+          <h3>المحور الطبي</h3>
+        </div>
+      </div>
+    </footer>
+  </center>
+
+
+  <script src="./main.js"></script>
+<script src="./bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
